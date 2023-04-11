@@ -73,8 +73,7 @@ VALUES
     ('Blind Guardian'),
     ('Nina Simone');
     
-INSERT INTO
-     SpotifyClone.usuario(nome, idade, data_assinatura, plano_id)
+INSERT INTO SpotifyClone.usuario(nome, idade, data_assinatura, plano_id)
 VALUES
     ('Barbara Liskov', 82, '2019-10-20', 1),
     ('Robert Cecil Martin', 58, '2017-01-06', 1),
