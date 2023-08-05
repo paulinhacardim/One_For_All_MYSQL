@@ -25,8 +25,8 @@ CREATE TABLE SpotifyClone.usuario(
 CREATE TABLE SpotifyClone.album(
     album_id INT PRIMARY KEY auto_increment,
     nome VARCHAR(45) NOT NULL,
-    id INT NOT NULL,
-    FOREIGN KEY (id) REFERENCES artista(id)
+    id_artista INT NOT NULL,
+    FOREIGN KEY (id_artista) REFERENCES artista(id)
 ) engine = InnoDB;
 
 CREATE TABLE SpotifyClone.cancoes(
@@ -87,7 +87,7 @@ VALUES
     ('Jorge Amado', 58, '2017-02-17', 4);
 
 INSERT INTO
-     SpotifyClone.album(nome, id)
+     SpotifyClone.album(nome, id_artista)
 VALUES
 ('Renaissance', 1),
     ('Jazz', 2),
